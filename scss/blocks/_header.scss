@@ -84,7 +84,52 @@
     position: sticky;
     z-index: 900;
     &__list {
+        display: block;
         @include flex;
+        align-items: flex-start;
         padding-top: 170px;
+    }
+    &__item {
+        display: block;
+        margin-right: 40px;
+        margin-bottom: 3px;
+    }
+    &__item:hover + .dropdown {
+        display: block;
+
+    }
+    &__link {
+        display: block;
+        margin-right: 40px;
+        color: #212121;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 30px;
+        &:focus {
+            border-bottom: 3px solid #ff8800;
+        }
+    }
+}
+.header-dropdown__link:focus {
+    border: 3px solid transparent;
+}
+.dropdown {
+    box-shadow:  0px 15px 25px rgba(48, 63, 115, 0.15);
+    background-color: #FFFFFF;
+    &:hover {
+        display: block;
+    }
+    display: none;
+    &-item {
+        margin-bottom: 20px;
+    }
+    &-link {
+        display: block;
+        color: #212121;
+        padding-left: 10px;
+        border-left: 3px solid transparent;
+        &:hover {
+            border-left: 3px solid #ff8800;
+            background-image: linear-gradient(to left #ffff00, #ffffff );
+        }
     }
 }
