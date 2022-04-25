@@ -1,0 +1,67 @@
+.valyuta {
+    &-title {
+        text-align: center;
+        font-size: 40px;
+        line-height: 80px;
+    }
+    &-subtitle {
+        font-size: 27px;
+        line-height: 50px;
+    }
+    &-card {
+        &__color {
+            margin-top: 20px;
+            background-color: #F4F5F7;
+            padding: 45px 70px
+        }
+        &__hero {
+            @include flex;
+            justify-content: space-between;
+            
+        }
+        border-radius: 8px;
+        max-width: 800px;
+        max-height: 600px;
+        border: 1px solid rgb(84, 84, 84);
+        padding: 45px;
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &s {
+            @include flex;  
+        }
+    }
+    &-sale {
+        &-title {
+            font-size: 20px;
+        }
+    }
+}
+.valyuta-sale__margin {
+    margin-right: 40px;
+}
+.card-subtitle {
+    font-size: 20px;
+    margin-top: 40px;
+}
+#text {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #FEAB48;
+    margin-top: 40px;
+}
+@media only screen and(max-width: 1111px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+@media only screen and(max-width: 950px) {
+    .container {
+        max-width: 850px;
+    }
+    .valyuta-cards {
+        @include flex;
+        flex-direction: column;
+    }
+}

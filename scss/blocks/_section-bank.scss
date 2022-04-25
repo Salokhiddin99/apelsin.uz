@@ -1,0 +1,39 @@
+.bank{
+    &-title {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    &-cards {
+        @include flex;
+        justify-content: space-between;
+    }
+    &-card1 {
+        border-radius: 10px;
+        padding: 25px;
+        max-width: 31%;
+        background-color: #F5F6F8;
+        &__title {
+            font-size: 20px;
+            padding: 5px;
+            background-color: #FFFFFF;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+    &-card2 {
+        border-radius: 10px;
+        max-width: 45%;
+        padding: 25px;
+        background-color: #F5F6F8;
+    }
+    &-card3 {
+        border-radius: 10px;
+        max-width: 23%;
+        padding: 25px;
+        background-color: #F5F6F8;
+    }
+
+}

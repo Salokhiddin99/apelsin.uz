@@ -1,0 +1,85 @@
+.pay {
+    &-title {
+        font-size: 40px;
+        font-weight: 400;
+        max-width: 800px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    &-cards {
+        margin-top: 100px;  
+        @include flex;
+        justify-content: space-between;
+    }
+    &-card {
+        background-color: #F4F5F7;
+        position: relative;
+        max-width: 550px;
+        height: 550px;
+        border-radius: 10px;
+        &__text {
+            padding: 40px;
+            &--title {
+                font-size: 45px;
+            }
+            &--subtitle {
+                margin-top: 50px;
+                max-width: 200px;
+                font-size: 20px;
+            } 
+        }
+        &__img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+@media only screen and(max-width: 950px) {
+    .container {
+        max-width: 850px;
+    }
+    .pay {
+        &-cards {
+        @include flex;
+        flex-direction: column;
+        }
+        &-title {
+            font-size: 35px;
+        }
+        &-card {
+            max-width: 900px;
+            margin-top: 40px;
+            height: 650px;
+            &__text{
+                &--title {
+                    font-size: 35px;
+                }
+                &--subtitle {
+                    max-width: none;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and(max-width: 400px) {
+    .container {
+        max-width: 380px;
+    }
+    .pay {
+        &-title {
+            font-size: 25px;
+        }
+        &-card {
+            margin-top: 40px;
+            height: 700px;
+            &__text{
+                &--title {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    
+}

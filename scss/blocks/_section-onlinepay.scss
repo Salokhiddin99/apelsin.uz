@@ -1,0 +1,26 @@
+.onlinepay {
+    margin-top: 100px;
+    background-color: #F5F6F8;
+    &-card {
+        @include flex;
+        justify-content: space-between;
+    }
+    &-text {
+        &__title {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+    }
+}
+@media only screen and(max-width: 950px) {
+    .container {
+        max-width: 850px;
+    }
+    .onlinepay-card__img {
+        display: none;
+    }
+}
