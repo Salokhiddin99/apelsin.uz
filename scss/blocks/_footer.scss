@@ -1,0 +1,63 @@
+.contact {
+    margin-bottom: 50px;
+    &-hero {
+        @include flex;
+        justify-content: space-between;
+        &__title {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        &__link {
+            color: #ff8800;
+            &s {
+                @include flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+.line-margin {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.footer  {
+    background-color: #F5F6F8;
+    &-card {
+        padding: 50px 0;
+        @include flex;
+        justify-content: start;
+        align-items: flex-start
+    }
+    &-product {
+        margin-right: 80px;
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__title {
+            font-size: 20px;
+            font-weight: 400;
+            color: black;
+        }
+        &__link {
+            font-weight: 300;
+            margin-top:8px;
+            color: black;
+        }
+    }
+    &-nav {
+        @include flex;
+        &__icon {
+            font-size: 35px;
+            margin-right: 10px;
+            color: #F5F6F8;
+            &s {
+                @include flex;
+            }
+
+        }
+    }
+    &-text {
+        max-width: 800px;
+        font-size: 14px;
+    }
+}

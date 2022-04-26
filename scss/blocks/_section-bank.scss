@@ -1,7 +1,10 @@
 .bank{
     &-title {
+        margin-top: 50px;
         font-size: 40px;
         font-weight: 400;
+        margin-bottom: 50px;
+        text-align: center;
     }
     &-cards {
         @include flex;
@@ -22,6 +25,10 @@
         &__subtitle {
             font-size: 18px;
         }
+        &__link {
+            padding-top: 50px;
+            color: #ff8800;
+        }
     }
     &-card2 {
         border-radius: 10px;
@@ -35,5 +42,28 @@
         padding: 25px;
         background-color: #F5F6F8;
     }
-
+}
+@media only screen and(max-width:950px) {
+    .container {
+        max-width: 850px;
+    }
+    .bank {
+        &-cards {
+            @include flex;
+            flex-direction: column;
+        }
+        &-card1 {
+            max-width: none;
+            margin-bottom: 50px;
+        }
+        &-card2 {
+            max-width: none;
+            margin-bottom: 50px;
+        }
+        &-card3 {
+            max-width: none;
+            margin-bottom: 50px;
+        }
+    }
+    
 }
